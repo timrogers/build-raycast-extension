@@ -1,6 +1,6 @@
 # Build Raycast Extension
 
-This simple __GitHub Action__ builds and (optionally!) lints a [custom extension](https://github.com/raycast/extensions) for [Raycast](https://raycast.com/).
+This simple __GitHub Action__ builds and (optionally!) lints a [custom extension](https://github.com/raycast/extensions) for [Raycast](https://raycast.com/), making sure that it passes Raycast's basic checks and is ready to publish.
 
 ## Getting started
 
@@ -48,3 +48,7 @@ jobs:
         with:
           extension_path: my_second_extension
 ```
+
+## Limitations
+
+This action does not allow you to log in to your Raycast developer account, so some linting checks are skipped (namely making sure that you have access to the `owner` team, if you're building for Raycast for Teams (<https://developers.raycast.com/teams-beta/getting-started>).
