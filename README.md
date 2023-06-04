@@ -44,7 +44,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: timrogers/build-raycast-extension@1.0.0
+      - uses: timrogers/build-raycast-extension@v1.0.0
         with:
           extension_path: my_second_extension
 ```
