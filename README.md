@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       # You don't have to specify any options here, although there are some non-mandatory options - see below!
-      - uses: timrogers/build-raycast-extension@1.0.0
+      - uses: timrogers/build-raycast-extension@v1.0.0
 ```
 
 Commit this to `main`, and your Raycast extension will be automatically built and linted whenever you push to GitHub.
